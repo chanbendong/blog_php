@@ -3,13 +3,41 @@
  * Created by PhpStorm.
  * User: dong
  * Date: 17/4/9
- * Time: ä¸‹åˆ5:27
+ * Time: ÏÂÎç5:27
  */
 include ('mysql.php');
-
-
 if (empty($_GET['cat_id'])){
-    echo 'æ‰¾ä¸åˆ°è¯¥é¡¹ç›®';
+    echo 'ÕÒ²»µ½¸ÃÀ¸Ä¿';
 }else{
-    echo 'æ‰¾åˆ°äº†';
+    $cat_id = $_GET['cat_id'];
+    if(!is_numeric($cat_id)){
+        echo "À¸Ä¿²»ºÏ·¨";
+        exit();
+    }
+
+
+
+    $sql = "select * from cat where cat_id=$cat_id";
+    $rs = mysqli_query($conn, $sql);
+    $s = mysqli_fetch_assoc($rs);
+    if(!empty($s)){
+        $sql = "select * from art where cat_id=$cat_id";
+        $rs = mysqli_query($conn, $sql);
+        $s = mysqli_fetch_assoc($rs);
+        if (!empty($s)){
+            echo 'À¸Ä¿ÏÂÓĞÎÄÕÂ';
+            exit();
+        }else{
+            $sql = "delete from cat where cat_id=$cat_id";
+            if (!mysqli_query($conn,$sql)){
+                echo 'À¸Ä¿É¾³ıÊ§°Ü';
+            }else{
+                echo 'É¾³ı³É¹¦';
+
+            }
+        }
+    }else{
+        echo 'À¸Ä¿²»´æÔÚ';
+        exit();
+    }
 }

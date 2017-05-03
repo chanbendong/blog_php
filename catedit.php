@@ -3,14 +3,39 @@
  * Created by PhpStorm.
  * User: dong
  * Date: 17/4/9
- * Time: ä¸‹åˆ5:26
+ * Time: ÏÂÎç5:26
  */
 
 include ('mysql.php');
 
 
+
+
 if (empty($_GET['cat_id'])){
-    echo 'æ‰¾ä¸åˆ°è¯¥é¡¹ç›®';
+    echo 'ÕÒ²»µ½¸ÃÏîÄ¿';
 }else{
-    echo 'æ‰¾åˆ°äº†';
+    $cat_id = $_GET['cat_id'];
+    if(!is_numeric($cat_id)){
+        echo "À¸Ä¿²»ºÏ·¨";
+        exit();
+    }
+    if (empty($_POST)){
+        $sql = "select * from cat where cat_id=$cat_id";
+        $rs = mysqli_query($conn, $sql);
+        $cat = mysqli_fetch_assoc($rs);
+        if (!empty($cat)){
+            require ('./view/admin/catedit.html');
+        }else{
+            echo '¸ÃÀ¸Ä¿²»´æÔÚ';
+        }
+    }else{
+        $post_catname = $_POST['catname'];
+        $sql = "update cat set catname='$post_catname' where cat_id=$cat_id";
+        if (!mysqli_query($conn, $sql)){
+            echo 'À¸Ä¿ĞŞ¸ÄÊ§°Ü';
+        }else{
+            echo 'À¸Ä¿ĞŞ¸Ä³É¹¦';
+        }
+
+    }
 }
