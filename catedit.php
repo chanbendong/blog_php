@@ -5,11 +5,7 @@
  * Date: 17/4/9
  * Time: 下午5:26
  */
-
-include ('mysql.php');
-
-
-
+require('./lib/init.php');
 
 if (empty($_GET['cat_id'])){
     echo '找不到该项目';
@@ -21,17 +17,15 @@ if (empty($_GET['cat_id'])){
     }
     if (empty($_POST)){
         $sql = "select * from cat where cat_id=$cat_id";
-        $rs = mysqli_query($conn, $sql);
-        $cat = mysqli_fetch_assoc($rs);
+        $cat = mGetRow($sql);
         if (!empty($cat)){
-            require ('./view/admin/catedit.html');
+            require (ROOT.'/view/admin/catedit.html');
         }else{
             echo '该栏目不存在';
         }
     }else{
-        $post_catname = $_POST['catname'];
-        $sql = "update cat set catname='$post_catname' where cat_id=$cat_id";
-        if (!mysqli_query($conn, $sql)){
+        $cat['catname'] = $_POST['catname'];
+        if (!mExec('cat',$cat,'update',"cat_id=$cat_id")){
             echo '栏目修改失败';
         }else{
             echo '栏目修改成功';

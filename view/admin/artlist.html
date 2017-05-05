@@ -44,7 +44,19 @@
                     <td>回复</td>
                     <td>状态</td>
                 </tr>
-                <?php foreach($cat as $c)>
+                <?php foreach($arts as $a){?>
+                <tr>
+                    <td><?php echo $a['art_id'];?></td>
+                    <td><?php echo date('Y/m/d',$a['pubtime']);?></td>
+                    <td><a href="#"><?php echo $a['title'];?></a></td>
+                    <td><?php echo $a['catname'];?></td>
+                    <td><span class="badge"><?php echo $a['comm'];?></span></td>
+                    <td>
+                        <a href="">编辑</a>
+                        <a href="">删除</a>
+                    </td>
+                </tr>
+                <?php }?>
             </table>
             <div id="pagebar">
                 Pages:&nbsp;

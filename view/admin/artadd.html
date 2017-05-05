@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-<link rel="stylesheet" href="./css/reset.css">
-<link rel="stylesheet" href="./css/adm.css">
+<link rel="stylesheet" href="../../css/reset.css">
+<link rel="stylesheet" href="../../css/adm.css">
 </head>
 <body>
     <header>
@@ -46,9 +46,9 @@
                     <label>栏目:</label>
                     <p>
                         <select name="cat_id">
-                            <option value="">人生</option>
-                            <option value="">哲学</option>
-                            <option value="">技术</option>
+                            <?php foreach($cats as $c){ ?>
+                            <option value="<?php echo $c['cat_id']?>"><?php echo $c['catname'] ?></option>
+                            <?php }?>
                         </select>
                     </p>
                 </div>

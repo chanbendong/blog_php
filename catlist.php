@@ -3,14 +3,11 @@
  * Created by PhpStorm.
  * User: dong
  * Date: 17/4/9
- * Time: ‰∏ãÂçà5:07
+ * Time: œ¬ŒÁ5:07
  */
 
-include ('mysql.php');
+require('./lib/init.php');
 $sql = "select * from cat";
-$rs = mysqli_query($conn,$sql);
-$cat = array();
-while ($s = mysqli_fetch_assoc($rs)){
-    $cat[] = $s;
-}
-require ('./view/admin/catlist.html');
+$cat = mGetAll($sql);
+//var_dump($cat);
+require (ROOT.'/view/admin/catlist.html');
