@@ -30,7 +30,7 @@
                 <h4>个人中心</h4>
                 <ul>
                     <li><a href="">修改密码</a></li>
-                    <li><a href="logout.php">退出登陆</a></li>
+                    <li><a href="">退出登陆</a></li>
                 </ul>
             </aside>
         </div>
@@ -39,21 +39,22 @@
                 <tr>
                     <td>序号</td>
                     <td>日期</td>
-                    <td>标题</td>
-                    <td>分类</td>
-                    <td>回复</td>
-                    <td>状态</td>
+                    <td>nick</td>
+                    <td>email</td>
+                    <td>content</td>
+                    <td>IP</td>
+                    <td>操作</td>
                 </tr>
-                <?php foreach($arts as $a){?>
+                <?php foreach($comms as $a){?>
                 <tr>
-                    <td><?php echo $a['art_id'];?></td>
+                    <td><?php echo $a['comment_id'];?></td>
                     <td><?php echo date('Y/m/d',$a['pubtime']);?></td>
-                    <td><a href="#"><?php echo $a['title'];?></a></td>
-                    <td><?php echo $a['catname'];?></td>
-                    <td><span class="badge"><?php echo $a['comm'];?></span></td>
+                    <td><a href="#"><?php echo $a['nick'];?></a></td>
+                    <td><?php echo $a['email'];?></td>
+                    <td><span class="badge"><?php echo $a['content'];?></span></td>
+                    <td><?php echo long2ip($a['ip']);?></td>
                     <td>
-                        <a href="artedit.php?art_id=<?php echo $a['art_id']?>">编辑</a>
-                        <a href="artdelete.php?art_id=<?php echo $a['art_id']?>">删除</a>
+                        <a href="commdel.php?comment_id=<?php echo $a['comment_id']?>">删除</a>
                     </td>
                 </tr>
                 <?php }?>

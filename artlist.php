@@ -6,6 +6,9 @@
  * Time: 下午4:54
  */
 require ('./lib/init.php');
+if (!acc()){
+    header('location: login.php');
+}
 
 $sql = "select art_id,title,pubtime,comm,catname from art left join cat on art.cat_id=cat.cat_id";
 $arts = mGetAll($sql);

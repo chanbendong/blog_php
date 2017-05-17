@@ -35,11 +35,11 @@
             </aside>
         </div>
         <div id="rside">
-            <form action="" method="post" enctype="multipart/form-data">
+            <form action="" method="post">
                 <div class="form-group">
                     <label>标题:</label>
                     <p>
-                        <input type="text" name="title">
+                        <input type="text" name="title" value="<?php echo $arts['title']?>">
                     </p>
                 </div>
                 <div class="form-group">
@@ -47,7 +47,7 @@
                     <p>
                         <select name="cat_id">
                             <?php foreach($cats as $c){ ?>
-                            <option value="<?php echo $c['cat_id']?>"><?php echo $c['catname'] ?></option>
+                            <option value="<?php echo $c['cat_id']?>" <?php if ($c['cat_id'] == $arts['cat_id']){?>selected="selected"<?php }?>><?php echo $c['catname'] ?></option>
                             <?php }?>
                         </select>
                     </p>
@@ -55,30 +55,22 @@
                 <div class="form-group">
                     <label >内容:</label>
                     <p>
-                        <textarea name="content"></textarea>
-                    </p>
-                </div>
-                <div class="form-group">
-                    <label>图片:</label> <p>
-                    <input type="file" name="pic">
+                        <textarea name="content"><?php echo $arts['content']?></textarea>
                     </p>
                 </div>
                 <div class="form-group">
                     <label>标签:</label>
                     <p>
-                        <input type="text" name="tag">
+                        <input type="text" name="tags" value="<?php echo $arts['arttag'];?>">
                     </p>
                 </div>
-
                 <div class="form-group">
                     <label>&nbsp;</label>
                     <p>
                         <button type="submit">提交</button>
                     </p>
                 </div>
-
             </form>
-
         </div>
     </div>
     <footer>

@@ -1,0 +1,1010 @@
+--------------------------------------
+2017/05/16 09:57:11
+select * from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 09:57:11
+insert into art (title,cat_id,content,pic,pubtime,arttag) values ('测试大图222','1','22','/upload/2017/05/16/Uezodlpng','1494899831','')
+--------------------------------------
+
+--------------------------------------
+2017/05/16 09:57:11
+update cat set num=num+1 where cat_id=1
+--------------------------------------
+
+--------------------------------------
+2017/05/16 09:57:36
+select * from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 09:57:37
+insert into art (title,cat_id,content,pic,pubtime,arttag) values ('测试大图222','1','22','/upload/2017/05/16/sFGwhBpng','1494899857','')
+--------------------------------------
+
+--------------------------------------
+2017/05/16 09:57:37
+update cat set num=num+1 where cat_id=1
+--------------------------------------
+
+--------------------------------------
+2017/05/16 09:57:52
+select * from art where art_id=
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+--------------------------------------
+
+--------------------------------------
+2017/05/16 09:57:52
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+--------------------------------------
+
+--------------------------------------
+2017/05/16 09:57:52
+select * from comment where art_id=
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+--------------------------------------
+
+--------------------------------------
+2017/05/16 09:57:52
+select catname,cat_id from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 09:57:52
+select count(*) from art where 1 
+--------------------------------------
+
+--------------------------------------
+2017/05/16 09:57:52
+select title,content,comm,pubtime,catname,art_id from art inner join cat on art.cat_id=cat.cat_id where 1  order by art_id desc limit 0,2
+--------------------------------------
+
+--------------------------------------
+2017/05/16 09:57:53
+select * from art where art_id=38
+--------------------------------------
+
+--------------------------------------
+2017/05/16 09:57:53
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=38
+--------------------------------------
+
+--------------------------------------
+2017/05/16 09:57:53
+select * from comment where art_id=38
+--------------------------------------
+
+--------------------------------------
+2017/05/16 09:59:09
+select * from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 09:59:24
+select * from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 09:59:24
+insert into art (title,cat_id,content,pic,pubtime,arttag) values ('附加费','1','阿拉啊','/upload/2017/05/16/VExbdQ.png','1494899964','')
+--------------------------------------
+
+--------------------------------------
+2017/05/16 09:59:24
+update cat set num=num+1 where cat_id=1
+--------------------------------------
+
+--------------------------------------
+2017/05/16 09:59:55
+select * from art where art_id=
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+--------------------------------------
+
+--------------------------------------
+2017/05/16 09:59:55
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+--------------------------------------
+
+--------------------------------------
+2017/05/16 09:59:55
+select * from comment where art_id=
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+--------------------------------------
+
+--------------------------------------
+2017/05/16 09:59:55
+select catname,cat_id from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 09:59:55
+select count(*) from art where 1 
+--------------------------------------
+
+--------------------------------------
+2017/05/16 09:59:55
+select title,content,comm,pubtime,catname,art_id from art inner join cat on art.cat_id=cat.cat_id where 1  order by art_id desc limit 0,2
+--------------------------------------
+
+--------------------------------------
+2017/05/16 09:59:57
+select * from art where art_id=39
+--------------------------------------
+
+--------------------------------------
+2017/05/16 09:59:57
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=39
+--------------------------------------
+
+--------------------------------------
+2017/05/16 09:59:57
+select * from comment where art_id=39
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:06:32
+select * from art where art_id=39
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:06:32
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=39
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:06:32
+select * from comment where art_id=39
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:06:35
+select * from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:06:43
+select * from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:07:45
+select * from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:08:32
+select * from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:10:27
+select * from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:10:29
+select * from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:10:29
+insert into art (title,cat_id,content,pic,pubtime,arttag) values ('fff','1','ffff','/upload/2017/05/16/Relk5L.png','1494904229','')
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:10:29
+update cat set num=num+1 where cat_id=1
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:11:02
+select * from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:11:03
+select * from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:11:03
+insert into art (title,cat_id,content,pic,pubtime,arttag) values ('fff','1','ffff','/upload/2017/05/16/VqYy31.png','1494904263','')
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:11:03
+update cat set num=num+1 where cat_id=1
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:13:39
+select * from art where art_id=
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:13:39
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:13:39
+select * from comment where art_id=
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:13:39
+select catname,cat_id from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:13:39
+select count(*) from art where 1 
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:13:39
+select title,content,comm,pubtime,catname,art_id from art inner join cat on art.cat_id=cat.cat_id where 1  order by art_id desc limit 0,2
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:13:41
+select * from art where art_id=41
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:13:41
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=41
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:13:41
+select * from comment where art_id=41
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:15:52
+select * from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:16:03
+select * from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:16:04
+insert into art (title,cat_id,content,pic,pubtime,arttag) values ('啦啦啦','1','啊实打实的','/upload/2017/05/16/nU29RC.png','1494904564','')
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:16:04
+update cat set num=num+1 where cat_id=1
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:16:15
+select * from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:16:19
+select * from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:16:19
+insert into art (title,cat_id,content,pic,pubtime,arttag) values ('啦啦啦sadfasd','1','啊实打实的asdasd','/upload/2017/05/16/ADU5B6.png','1494904579','')
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:16:19
+update cat set num=num+1 where cat_id=1
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:16:25
+select * from art where art_id=
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:16:25
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:16:25
+select * from comment where art_id=
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:16:25
+select catname,cat_id from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:16:25
+select count(*) from art where 1 
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:16:25
+select title,content,comm,pubtime,catname,art_id from art inner join cat on art.cat_id=cat.cat_id where 1  order by art_id desc limit 0,2
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:16:27
+select * from art where art_id=43
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:16:27
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=43
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:16:27
+select * from comment where art_id=43
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:16:31
+select * from art where art_id=42
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:16:31
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=42
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:16:31
+select * from comment where art_id=42
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:16:32
+select * from art where art_id=43
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:16:32
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=43
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:16:32
+select * from comment where art_id=43
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:25:21
+select catname,cat_id from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:25:21
+select count(*) from art where 1 
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:25:21
+select title,content,comm,pubtime,catname,art_id from art inner join cat on art.cat_id=cat.cat_id where 1  order by art_id desc limit 0,2
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:26:49
+select catname,cat_id from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:26:49
+select count(*) from art where 1 
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:26:49
+select title,content,comm,pubtime,catname,art_id from art inner join cat on art.cat_id=cat.cat_id where 1  order by art_id desc limit 0,2
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:26:54
+select catname,cat_id from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:26:54
+select count(*) from art where 1 
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:26:54
+select title,content,comm,pubtime,catname,art_id from art inner join cat on art.cat_id=cat.cat_id where 1  order by art_id desc limit 0,2
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:27:07
+select catname,cat_id from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:27:07
+select count(*) from art where 1 
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:27:07
+select title,content,comm,pubtime,catname,art_id from art inner join cat on art.cat_id=cat.cat_id where 1  order by art_id desc limit 0,2
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:27:41
+select catname,cat_id from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:27:41
+select count(*) from art where 1 
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:27:41
+select title,content,comm,pubtime,catname,art_id from art inner join cat on art.cat_id=cat.cat_id where 1  order by art_id desc limit 0,2
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:28:05
+select catname,cat_id from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:28:05
+select count(*) from art where 1 
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:28:05
+select title,content,comm,pubtime,catname,art_id from art inner join cat on art.cat_id=cat.cat_id where 1  order by art_id desc limit 0,2
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:28:19
+select catname,cat_id from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:28:19
+select count(*) from art where 1 
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:28:19
+select title,content,comm,pubtime,catname,art_id from art inner join cat on art.cat_id=cat.cat_id where 1  order by art_id desc limit 0,2
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:28:21
+select catname,cat_id from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:28:22
+select count(*) from art where 1 
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:28:22
+select title,content,comm,pubtime,catname,art_id from art inner join cat on art.cat_id=cat.cat_id where 1  order by art_id desc limit 0,2
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:28:59
+select catname,cat_id from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:28:59
+select count(*) from art where 1 
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:28:59
+select title,content,comm,pubtime,catname,art_id from art inner join cat on art.cat_id=cat.cat_id where 1  order by art_id desc limit 0,2
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:32:11
+select catname,cat_id from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:32:11
+select count(*) from art where 1 
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:32:11
+select title,content,comm,pubtime,catname,art_id from art inner join cat on art.cat_id=cat.cat_id where 1  order by art_id desc limit 0,2
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:32:52
+select catname,cat_id from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:32:52
+select count(*) from art where 1 
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:32:52
+select title,content,comm,pubtime,catname,art_id from art inner join cat on art.cat_id=cat.cat_id where 1  order by art_id desc limit 0,2
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:33:08
+select catname,cat_id from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:33:08
+select count(*) from art where 1 
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:33:08
+select title,content,comm,pubtime,catname,art_id from art inner join cat on art.cat_id=cat.cat_id where 1  order by art_id desc limit 0,2
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:33:47
+select catname,cat_id from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:33:47
+select count(*) from art where 1 
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:33:47
+select title,content,comm,pubtime,catname,art_id,thumb from art inner join cat on art.cat_id=cat.cat_id where 1  order by art_id desc limit 0,2
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:33:57
+select catname,cat_id from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:33:57
+select count(*) from art where 1 and art.cat_id=1
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:33:57
+select title,content,comm,pubtime,catname,art_id,thumb from art inner join cat on art.cat_id=cat.cat_id where 1 and art.cat_id=1 order by art_id desc limit 0,2
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:34:23
+select * from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:34:35
+select * from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:34:35
+insert into art (title,cat_id,content,pic,thumb,pubtime,arttag) values ('测试缩略和大图','1','阿卡说了句风口浪尖','/upload/2017/05/16/4MTPEw.jpg','/upload/2017/05/16/h2gAlU.png','1494905675','')
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:34:35
+update cat set num=num+1 where cat_id=1
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:34:39
+select catname,cat_id from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:34:39
+select count(*) from art where 1 
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:34:39
+select title,content,comm,pubtime,catname,art_id,thumb from art inner join cat on art.cat_id=cat.cat_id where 1  order by art_id desc limit 0,2
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:34:42
+select * from art where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:34:42
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:34:42
+select * from comment where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:35:32
+select * from art where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:35:32
+select title,content,pubtime,catname,comm,pic from art inner join cat on art.cat_id=cat.cat_id where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:35:32
+select * from comment where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:35:45
+select * from art where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:35:45
+select title,content,pubtime,catname,comm,pic,thumb from art inner join cat on art.cat_id=cat.cat_id where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:35:45
+select * from comment where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:53:06
+select * from art where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:53:06
+select title,content,pubtime,catname,comm,pic,thumb from art inner join cat on art.cat_id=cat.cat_id where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:53:06
+select * from comment where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:59:18
+select * from art where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:59:18
+select title,content,pubtime,catname,comm,pic,thumb from art inner join cat on art.cat_id=cat.cat_id where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 11:59:18
+select * from comment where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 13:31:23
+select * from art where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 13:31:23
+select title,content,pubtime,catname,comm,pic,thumb from art inner join cat on art.cat_id=cat.cat_id where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 13:31:23
+select * from comment where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 13:31:27
+select catname,cat_id from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 13:31:27
+select count(*) from art where 1 
+--------------------------------------
+
+--------------------------------------
+2017/05/16 13:31:27
+select title,content,comm,pubtime,catname,art_id,thumb from art inner join cat on art.cat_id=cat.cat_id where 1  order by art_id desc limit 0,2
+--------------------------------------
+
+--------------------------------------
+2017/05/16 13:38:12
+select catname,cat_id from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 13:38:12
+select count(*) from art where 1 
+--------------------------------------
+
+--------------------------------------
+2017/05/16 13:38:12
+select title,content,comm,pubtime,catname,art_id,thumb from art inner join cat on art.cat_id=cat.cat_id where 1  order by art_id desc limit 0,2
+--------------------------------------
+
+--------------------------------------
+2017/05/16 14:18:12
+select * from user where name='chanbendong' and password='123'
+--------------------------------------
+
+--------------------------------------
+2017/05/16 14:18:12
+select art_id,title,pubtime,comm,catname from art left join cat on art.cat_id=cat.cat_id
+--------------------------------------
+
+--------------------------------------
+2017/05/16 14:23:56
+select art_id,title,pubtime,comm,catname from art left join cat on art.cat_id=cat.cat_id
+--------------------------------------
+
+--------------------------------------
+2017/05/16 14:24:13
+select art_id,title,pubtime,comm,catname from art left join cat on art.cat_id=cat.cat_id
+--------------------------------------
+
+--------------------------------------
+2017/05/16 14:24:22
+select * from user where name='chanbendong' and password='123'
+--------------------------------------
+
+--------------------------------------
+2017/05/16 14:24:22
+select art_id,title,pubtime,comm,catname from art left join cat on art.cat_id=cat.cat_id
+--------------------------------------
+
+--------------------------------------
+2017/05/16 14:27:36
+select art_id,title,pubtime,comm,catname from art left join cat on art.cat_id=cat.cat_id
+--------------------------------------
+
+--------------------------------------
+2017/05/16 14:27:42
+select art_id,title,pubtime,comm,catname from art left join cat on art.cat_id=cat.cat_id
+--------------------------------------
+
+--------------------------------------
+2017/05/16 14:28:56
+select art_id,title,pubtime,comm,catname from art left join cat on art.cat_id=cat.cat_id
+--------------------------------------
+
+--------------------------------------
+2017/05/16 16:09:30
+select catname,cat_id from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 16:09:30
+select count(*) from art where 1 
+--------------------------------------
+
+--------------------------------------
+2017/05/16 16:09:30
+select title,content,comm,pubtime,catname,art_id,thumb from art inner join cat on art.cat_id=cat.cat_id where 1  order by art_id desc limit 0,2
+--------------------------------------
+
+--------------------------------------
+2017/05/16 16:09:41
+select * from user where name='dmin' or 1#' and password='aa'
+--------------------------------------
+
+--------------------------------------
+2017/05/16 16:09:41
+select art_id,title,pubtime,comm,catname from art left join cat on art.cat_id=cat.cat_id
+--------------------------------------
+
+--------------------------------------
+2017/05/16 16:09:55
+select catname,cat_id from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 16:09:55
+select count(*) from art where 1 
+--------------------------------------
+
+--------------------------------------
+2017/05/16 16:09:55
+select title,content,comm,pubtime,catname,art_id,thumb from art inner join cat on art.cat_id=cat.cat_id where 1  order by art_id desc limit 0,2
+--------------------------------------
+
+--------------------------------------
+2017/05/16 16:39:44
+select * from user where name='admin\' or 1#' and password='a'
+--------------------------------------
+
+--------------------------------------
+2017/05/16 17:16:52
+select * from user where name='chanbendong' and password='123'
+--------------------------------------
+
+--------------------------------------
+2017/05/16 17:16:52
+select art_id,title,pubtime,comm,catname from art left join cat on art.cat_id=cat.cat_id
+--------------------------------------
+
+--------------------------------------
+2017/05/16 17:16:59
+select * from art where art_id=
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+--------------------------------------
+
+--------------------------------------
+2017/05/16 17:16:59
+select title,content,pubtime,catname,comm,pic,thumb from art inner join cat on art.cat_id=cat.cat_id where art_id=
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+--------------------------------------
+
+--------------------------------------
+2017/05/16 17:16:59
+select * from comment where art_id=
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+--------------------------------------
+
+--------------------------------------
+2017/05/16 17:16:59
+select catname,cat_id from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 17:16:59
+select count(*) from art where 1 
+--------------------------------------
+
+--------------------------------------
+2017/05/16 17:16:59
+select title,content,comm,pubtime,catname,art_id,thumb from art inner join cat on art.cat_id=cat.cat_id where 1  order by art_id desc limit 0,2
+--------------------------------------
+
+--------------------------------------
+2017/05/16 17:19:34
+select * from art where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 17:19:34
+select title,content,pubtime,catname,comm,pic,thumb from art inner join cat on art.cat_id=cat.cat_id where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 17:19:34
+select * from comment where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 17:19:46
+select * from art where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 17:19:46
+select title,content,pubtime,catname,comm,pic,thumb from art inner join cat on art.cat_id=cat.cat_id where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 17:19:46
+select * from comment where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 17:19:46
+insert into comment (nick,email,content,pubtime,art_id,ip) values ('aa','ddssa','<script>while(true){alert(111);}</script>','1494926386','44','2130706433')
+--------------------------------------
+
+--------------------------------------
+2017/05/16 17:19:46
+update art set comm=comm+1 where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 17:19:46
+select * from art where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 17:19:46
+select title,content,pubtime,catname,comm,pic,thumb from art inner join cat on art.cat_id=cat.cat_id where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 17:19:46
+select * from comment where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 17:25:38
+select catname,cat_id from cat
+--------------------------------------
+
+--------------------------------------
+2017/05/16 17:25:38
+select count(*) from art where 1 
+--------------------------------------
+
+--------------------------------------
+2017/05/16 17:25:38
+select title,content,comm,pubtime,catname,art_id,thumb from art inner join cat on art.cat_id=cat.cat_id where 1  order by art_id desc limit 0,2
+--------------------------------------
+
+--------------------------------------
+2017/05/16 17:25:39
+select * from art where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 17:25:39
+select title,content,pubtime,catname,comm,pic,thumb from art inner join cat on art.cat_id=cat.cat_id where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 17:25:39
+select * from comment where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 17:26:05
+select * from art where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 17:26:05
+select title,content,pubtime,catname,comm,pic,thumb from art inner join cat on art.cat_id=cat.cat_id where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 17:26:05
+select * from comment where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 17:26:05
+insert into comment (nick,email,content,pubtime,art_id,ip) values ('asd','asd','&lt;p&gt;ssss&lt;/p&gt;','1494926765','44','2130706433')
+--------------------------------------
+
+--------------------------------------
+2017/05/16 17:26:05
+update art set comm=comm+1 where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 17:26:05
+select * from art where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 17:26:05
+select title,content,pubtime,catname,comm,pic,thumb from art inner join cat on art.cat_id=cat.cat_id where art_id=44
+--------------------------------------
+
+--------------------------------------
+2017/05/16 17:26:05
+select * from comment where art_id=44
+--------------------------------------
+

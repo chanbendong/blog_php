@@ -101,7 +101,7 @@ function mExec($table,$data, $act = 'insert' , $where = 0){
             $sql .= $k . "='" . $v . "',";
         }
         $sql = rtrim($sql, ','). " where " . $where;
-//        echo $sql;
+//        echo $sql;exit();
         return mQuery($sql);
     }
 }

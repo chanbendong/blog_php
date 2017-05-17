@@ -24,69 +24,49 @@
     <div id="main">
         <div id="lside">
             <article>
-                <h2><a href="#">午后的街头</a></h2>
+                <h2><a href="#"><?php echo $art['title'];?></a></h2>
                 <div class="entry_header">
-                    <time>2015/7月/日</time>
+                    <time><?php echo date('Y/m/d', $art['pubtime']);?></time>
                     by
                     <a href="#">十八</a>
-                    <a class="catlink" href="#">闲谈随笔</a>
-                    <a class="comment" href="#">8条评论</a>
+                    <a class="catlink" href="#"><?php echo $art['catname'];?></a>
+                    <a class="comment" href="#"><?php echo $art['comm'];?>条评论</a>
                 </div>
+                <?php if($art['thumb']){?>
+                <img src="<?php echo $art['thumb'];?>" alt="">
+                <?php }?>
                 <div class="entry_content">
-                    <p>有时突然想说我爱你，<br>
-                    有时突然慌张忧伤。</p>
-                    <p>
-                    像迷路的孩子，<br>
-                    东张西望。
-                    </p>
-                    <p>
-                    伸出双手想抓住，时光像泥鳅一样。
-                    </p>
+                   <?php echo $art['content'];?>
                 </div>
             </article>
             <div id="comments">
+                <?php foreach($comment as $c){?>
                 <ol>
                     <li>
                         <img src="https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=50&d=identicon&r=pg" alt="">
-                        <cite><a href="#">钻石王老五</a></cite> <br>
-                        <time>2015年8月4日 20时31分</time>
+                        <cite><a href="#"><?php echo $c['nick'];?></a></cite> <br>
+                        <time><?php echo date('Y年m月d日 H:i', $c['pubtime']);?></time>
                     </li>
                     <li>
-                        十八哥的文章写的好啊
+                        <?php echo $c['content'];?>
                     </li>
                 </ol>
-                <ol>
-                    <li>
-                        <img src="https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=50&d=identicon&r=pg" alt="">
-                        <cite><a href="#">钻石王老五</a></cite> <br>
-                        <time>2015年8月4日 20时31分</time>
-                    </li>
-                    <li>
-                        十八哥的文章写的好啊
-                    </li>
-                </ol>
-                <ol>
-                    <li>
-                        <img src="https://secure.gravatar.com/avatar/582b66ad5ae1b69c7601a990cb9a661a?s=50&d=identicon&r=pg" alt="">
-                        <cite><a href="#">钻石王老五</a></cite> <br>
-                        <time>2015年8月4日 20时31分</time>
-                    </li>
-                    <li>
-                        十八哥的文章写的好啊
-                    </li>
-                </ol>
+                <?php }?>
             </div>
             <div id="respond" class="comment-respond">
                 <h3>Leave a Comment</h3>
+                <?php if(isset($rs) && ($rs==false)) {?>
+                <p style="color: red">留言发布失败</p>
+                <?php }?>
                 <form action="#" method="post">
                     <p>
-                    <input placeholder="your name" name="username" type="text" value="" size="30">
+                    <input placeholder="your nick" name="nick" type="text" value="" size="30">
                     </p>
                     <p>
                     <input placeholder="Email" name="email" type="text" value="" size="30">
                     </p>
                     <p>
-                    <textarea name="comment" cols="45" rows="8" aria-required="true"></textarea>
+                    <textarea name="content" cols="45" rows="8" aria-required="true"></textarea>
                     <p>
                     <input type="submit" value="Post Comment">
                 </p>
